@@ -36,7 +36,7 @@ class EmailObserver:
         print(f"email:{topic}={data}")
 
 
-def SmsObserver:
+class SmsObserver:
     def update(self, topic: str, data: str) -> None:
         print(f"sms:{topic}={data}")
 
