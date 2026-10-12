@@ -41,7 +41,7 @@ class SugarDecorator(Beverage):
         return self._inner.description() + " + sugar"
 
 
-def CaramelDecorator(Beverage):
+class CaramelDecorator(Beverage):
     def __init__(self, inner: Beverage) -> None:
         self._inner = inner
 
@@ -61,6 +61,7 @@ def main() -> None:
 
     cup3 = CaramelDecorator(MilkDecorator(SugarDecorator(Coffee())))
     print(cup3.description(), cup3.cost())
+
 
 
 if __name__ == "__main__":
