@@ -63,6 +63,5 @@ def main() -> None:
     print(cup3.description(), cup3.cost())
 
 
-
 if __name__ == "__main__":
     main()
